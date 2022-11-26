@@ -24,13 +24,8 @@ function getValue(myVal) {
 var getHello = function (s) {
     return "";
 };
-
-// var heros = ["thor", "spiderman", "ironman"];
-// var val = heros.map(function (hero) {
-//     return "hero is ".concat(hero);
-// });
-var heros = [1, 2, 3];
-heros.map(function (hero) {
+var heros = ["thor", "spiderman", "ironman"];
+var val = heros.map(function (hero) {
     return "hero is ".concat(hero);
 });
 console.log(val);
