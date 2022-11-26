@@ -1,6 +1,6 @@
-function addTwo(num: number) {
-
-    return num + 2;
+function addTwo(num: number): number {
+    return num + 2
+    // return "hello"
 }
 
 function getUpper(val: string) {
@@ -15,11 +15,41 @@ addTwo(5);
 getUpper("shawn");
 
 
-
 signUpUser("shawn", "shawn@gmail", false)
 loginUser("h", "h@h.com")
 
 
+function getValue(myVal: number):  string | boolean {
+    if (myVal > 5) {
+        return true
+    }
+    return "200 OK";
+}
 
+
+const getHello = (s: string): string => {
+    return ""
+}
+
+// const heros = ["thor", "spiderman", "ironman"]
+// let val:string[] = heros.map(hero => {
+    //     return `hero is ${hero}`
+    // })
+
+
+const heros = [1, 2, 3]
+
+heros.map((hero): string => {
+    return `hero is ${hero}`;
+})
+
+function consoleError(errmsg: string): void {
+    console.log(errmsg);
+}
+
+function handleError(errmsg: string): never {
+    throw new Error(errmsg);
+    
+}
 
 export {}
