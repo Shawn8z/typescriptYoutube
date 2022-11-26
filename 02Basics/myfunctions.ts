@@ -1,8 +1,25 @@
-function addTwo(num) {
-    num.toUpperCase();
+function addTwo(num: number) {
+
     return num + 2;
 }
 
-addTwo("5");
+function getUpper(val: string) {
+    return val.toUpperCase()
+}
+
+function signUpUser(name: string, email: string, isPaid: boolean) {}
+
+let loginUser = (name:string, email:string, isPaid:boolean = false) => {}
+
+addTwo(5);
+getUpper("shawn");
+
+
+
+signUpUser("shawn", "shawn@gmail", false)
+loginUser("h", "h@h.com")
+
+
+
 
 export {}
